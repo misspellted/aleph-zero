@@ -23,11 +23,99 @@ as the truth, and never truly questioning its assumptions.
 later that it won't matter what numerical base, or actually, any glyph-based system of notation, due to the properties
 uncovered and discussed.]
 
+In various videos on YouTube thus watched on or tangential to the subject, the Argument is described in a manner as such:
+
+1) Create a table, of two columns, the left containing values from set N, and the right containing values from set R.
+2) For each row in the table, the value from N increments by 1 from the previous, whereas the value from R is random.
+3) Assume that each value from R is unique (not duplicate) of any other row.
+3) For brevity's sake, we can use a table of about 10 entries, sufficient to demonstrate the principal of the Argument.
+4) Assume that we have reached infinity in the column of N.
+5) Derive a function, given a digit, another but different digit is yielded.
+6) Derive a new value from R using the derived function, applied to the row's digit (r1d1, r2d2, r2d3, et cetera).
+7) Demonstrate that this new value cannot exist as other entries in the table, since each digit per row is different.
+8) Conclude that since the right column has one more value than the left column, R has a different cardinality than N.
+
+Using the explanation expressed in Vertiasium's "Math's Fundamental Flaw" video on YouTube, we pull out the starting
+example table (11 entries, at 5 minutes, 24 seconds into the video):
+
+Natural|Real
+-------+------------------------------------------
+      1|0.5480533054908861556597798880829941481351
+      2|0.4181401683991169959675460177095374092459
+      3|0.5381308315643413830997587865567766129970
+      4|0.5766831113902579630803302279673516750335
+      5|0.7909378259887308582065656992199365049600
+      6|0.1920659181643430968300378935964545235037
+      7|0.1522774955146660724736307201965246349573
+      8|0.2837930687898287951398401673941407352685
+      9|0.6780573862320876665776836489385459572076
+     10|0.2228083434102144932964506551797967404127
+     11|0.0623600003454741064201627409602224361151
+       +------------------------------------------
+
+Vertiasium states that "Now, since each real number is an infinite decimal, there is no first one, so we can write them
+down in any random order. The key is to make sure we get them all with no duplicates, and line them up one to one with
+an integer." (4:54 to 5:08).
+
+Derived function for the new real number:
+  d < 9? d + 1; d == 9? d - 1.
+  "Taking the first digit of the first number, and adding one. [...] If the digit is a nine, just roll it back to an eight."
+  (5:37 to 5:52)
+
+Therefore, if we apply this derived function to the real numbers in the right column, we get a new real number:
+       |0.62974657755...
+
+This new real number is then compared against all values in the right column, demonstrating that for any entry in the list,
+it has at least one different digit in the particular place for each row, and as such, it is not in the table with a one-
+to-one integer.
+
+Vertiasium concludes "It shows there must be more real numbers between zero and one than there are natural numbers extending
+out to infinity. So not all infinities are the same size." (6:22 to 6:34)
+
+And, if one were to follow the logic, the conclusion appears to be undeniable and pretty solid. However, there are a few
+assumptions made that make the Argument fallible.
+
 ---
 
 2: Reaching Infinity
 
 ---
+
+The first assumption is used as part of the proof by contradiction: Because we've reached infinity in the natural numbers, and
+this new real number doesn't exist associated with the infinite natural numbers, the set of real numbers has a different size
+of infinity than that of the natural numbers.
+
+Fair enough, but, there lies an errata that must be questioned as eloquently as in the proof. What happens if one were to apply
+the diagonalization to the natural number column, starting from the right-most digit, and diagonalizing to the bottom-left?
+We would find a new natural number that does not exist in the natural numbers column, disproving the assumption that we have
+reached infinity.
+
+Borrowing the table from Vertiasium's video again, but filling in the missing zeros in the natural number column, and using
+the same derived digit function:
+
+Natural|Real
+-------+------------------------------------------
+     01|0.5480533054908861556597798880829941481351
+     02|0.4181401683991169959675460177095374092459
+     03|0.5381308315643413830997587865567766129970
+     04|0.5766831113902579630803302279673516750335
+     05|0.7909378259887308582065656992199365049600
+     06|0.1920659181643430968300378935964545235037
+     07|0.1522774955146660724736307201965246349573
+     08|0.2837930687898287951398401673941407352685
+     09|0.6780573862320876665776836489385459572076
+     10|0.2228083434102144932964506551797967404127
+     11|0.0623600003454741064201627409602224361151
+       +------------------------------------------
+
+We get a new natural number: 12.
+
+12 is not in the list, but we assumed we reached infinity of the natural numbers. Therefore, the natural numbers, in this
+particular view, has one more value within its set than the real numbers, which in turn results in the conclusion that the
+set of natural numbers has a bigger size of infinity than the set of real numbers.
+
+In order to resolve this duality of diagonals, we need a different way of assuming we've reached infinity. However, there
+is another of assumption we need to address first.
 
 ---
 
@@ -35,22 +123,295 @@ uncovered and discussed.]
 
 ---
 
+In the Vertiasium video, a derived digit function is presented, and we expand the definition to a more formal function:
+
+d|d' (d-prime)
+-+-
+0|1
+1|2
+2|3
+3|4
+4|5
+5|6
+6|7
+7|8
+8|9
+9|8
+
+This d-prime function, as we shall call it hereafter, has a "Fundamental Flaw": the input space covers the entire set
+of decimal digits (0-9), but the output space only covers 90% (1-9). The "roll it back to eight" instruction is the fly
+in the ointment, as the new real number cannot have any zeros in the value, excepting that of the "0." prefix.
+
+The correct d-prime function (in Vertiasium's example) should be to "roll nine to zero", or, to put it in a more
+mathematical form: (d + 1) mod 10, in which the corrected output space properly affords reaching the 0 digit again:
+
+d|d' (d-prime)
+-+-
+0|1
+1|2
+2|3
+3|4
+4|5
+5|6
+6|7
+7|8
+8|9
+9|0
+
+There is one more assumption we must address, however, before we can really understand the error in the Argument.
+
 ---
 
 4: Unique Entropy
 
 ---
 
+Vertiasium states that "Now, since each real number is an infinite decimal, there is no first one, so we can write them
+down in any random order. The key is to make sure we get them all with no duplicates, and line them up one to one with
+an integer." (4:54 to 5:08).
+
+Well, there is one assumption (uniqueness), but there is an error in the explanation for writing the real numbers in any
+order: "[T]here is no first one".
+
+If there is no first real number, then how do we know what the first digit of any real number is? There is no explanation
+offered as to why this makes any level of common sense, nor is any axiom-based logic provided that allows the reader to
+do exactly as stated. It is of no consequece the order the real numbers are written down, that is the purpose of using
+random digits to construct any row's real number. Not because each is an "infinite decimal". Such a claim has no bearing
+on anything; it means nothing.
+
+What was the important part was the "key" - "[T]o make sure we get them all with no duplicates". This "no duplicates" has
+another name - uniqueness. Using "uniqueness" is a common way to say there are no duplicates. However, how do we know "we
+[got] them all with no duplicates" if we are writing them down randomly?
+
+In order to ensure we have no duplicates, there must be a mechanism by which we can test for uniqueness of a real number,
+such that it does not exist in the table already. If we claim this as an assumption, we must be able to prove it in order
+to be able to demonstrate that what we generate as the new real number (using the d-prime function) is also unique.
+
 ---
 
 5: Holey B.I.B.L.E
 
----
+In taking all three corrective actions to remove assumptions, a new table generator function was identified, T[p], where
+p is the number of places to be generated, starting at p=1:
+
+T[1]:
+
+Natural|Real
+-------+----
+      0|0.0
+      1|0.1
+      2|0.2
+      3|0.3
+      4|0.4
+      5|0.5
+      6|0.6
+      7|0.7
+      8|0.8
+      9|0.9
+
+T[2]:
+
+Natural|Real   
+-------+-------
+     00|0.00     
+     01|0.01     
+     02|0.02     
+     03|0.03     
+     04|0.04     
+     05|0.05     
+     06|0.06     
+     07|0.07     
+     08|0.08     
+     09|0.09     
+     10|0.10     
+     11|0.11     
+     12|0.12     
+     13|0.13     
+     14|0.14     
+     15|0.15     
+     16|0.16     
+     17|0.17     
+     18|0.18     
+     19|0.19     
+     20|0.20     
+     21|0.21     
+     22|0.22     
+     23|0.23     
+     24|0.24     
+     25|0.25     
+     26|0.26     
+     27|0.27     
+     28|0.28     
+     29|0.29     
+     30|0.30     
+     31|0.31     
+     32|0.32     
+     33|0.33     
+     34|0.34     
+     35|0.35     
+     36|0.36     
+     37|0.37     
+     38|0.38     
+     39|0.39     
+     40|0.40     
+     41|0.41     
+     42|0.42     
+     43|0.43     
+     44|0.44     
+     45|0.45     
+     46|0.46     
+     47|0.47     
+     48|0.48     
+     49|0.49     
+     50|0.50     
+     51|0.51     
+     52|0.52     
+     53|0.53     
+     54|0.54     
+     55|0.55     
+     56|0.56     
+     57|0.57     
+     58|0.58     
+     59|0.59     
+     60|0.60     
+     61|0.61     
+     62|0.62     
+     63|0.63     
+     64|0.64     
+     65|0.65     
+     66|0.66     
+     67|0.67     
+     68|0.68     
+     69|0.69     
+     70|0.70     
+     71|0.71     
+     72|0.72     
+     73|0.73     
+     74|0.74     
+     75|0.75     
+     76|0.76     
+     77|0.77     
+     78|0.78     
+     79|0.79     
+     80|0.80     
+     81|0.81     
+     82|0.82     
+     83|0.83     
+     84|0.84     
+     85|0.85     
+     86|0.86     
+     87|0.87     
+     88|0.88     
+     89|0.89     
+     90|0.90     
+     91|0.91     
+     92|0.92     
+     93|0.93     
+     94|0.94     
+     95|0.95     
+     96|0.96     
+     97|0.97     
+     98|0.98     
+     99|0.99     
+
+In order to save space, and be gentle to the reader, I am including "three.txt" here by reference, generated by the
+table.py script in the same repository directory as this text. Namely because I do not wish to burden the reader to see
+1002 additional lines showing the result of generating T[3].
+
+Suffice to say, as shown in the generated tables, it is dependent upon the number of places. However, the generated real
+numbers oddly correspond to the natural numbers. The reader will note that given a places value of 1, the table had 10
+rows; 2 places, 100 rows; 3 places, 1000 rows.
+
+One might recall that "each real number is an infinite decimal", and therefore, we must use an infinite number of places
+in the final table, to reach infinity in the natural numbers column. This also has the side effect of reaching an infinite
+number of decimal digits in each real number in the table as well.
+
+This expansion of the table with each successive "hole" between places is the "Holey" part of the name of the mechanism,
+with "B.I.B.L.E" refering to each expanstion as a way to both bound and also reach infinity: Bounding Infinity By
+Limited Expansion.
+
+The fault in the Argument's construction of the natural numbers column is that it is linear, but the real number side is
+exponential (contained the "infinite decimals"). By defining T[1] as the first 10 natural numbers directly pointing to
+the corresponding 10 real numbers, we notice the hole that, for example, 0.12 isn't included in T[1]. We expand the table
+to T[2] in order to cover that second place in the real number. In doing so, we can now take any diagonal in any T[p] and
+not only generate a new real number, with using the corrected d-prime function, but also find that it already exists:
+
+d|d'
+-+-
+0|1
+1|2
+2|3
+3|4
+4|5
+5|6
+6|7
+7|8
+8|9
+9|0
+
+T[1]' (using the d-prime function to generate the new real number from T[1]): 0.1.
+
+> 0.1 already exists at T[1] at index 1.
+
+T[2]': 0.12
+
+> 0.12 already exists at T[2] at index 12.
+
+T[3]': 0.123
+
+> 0.123 already exists in T[2] at index 123.
+
+This will always hold true as we take the number of places to infinity, T[infinity].
+
+If we can always find the "new" real number, we have proven that we actually did "got all the real numbers", and we collected
+all possible real numbers out to places p, and as a by-product of generating the table in a defined
+and repetitious manner, we have removed the randomness and "no first number" error
 
 ---
 
-6: Conclusion
+6: Conlusion?
 
 ---
 
+"The key is to make sure we get them all with no duplicates."
+
+No, the key was to prove we got all the unique real numbers. By limiting how we expand to infinity, by using the concept of
+holes between the numbers to fill in the gaps, we no longer rely on randomly generating a real number, but instead calculate
+each row, and as a result, show that each real number, as we approach an infinite places "p", we can literally just "drop the
+dot" to find the index into the column of natural numbers.
+
+This leads to the result that the set of natural numbers has the same size of the set of real numbers, and therefore, both
+have the same cardinality, aleph zero.
+
+The final error in the Argument is that we cannot reach infinity. Infinity isn't a value, it is a function:
+
+For any input "i", return "i + 1".
+
 ---
+
+7: But.. but..!
+
+---
+
+Sure, let's have an epilouge real quick.
+
+Doesn't N and N/2 have the same cardinality?
+
+Doesn't that also mean N/2 has the same cardinality as N/4?
+
+Or, in other terms, N/2^0 has the same cardinality as N/2^1 which has the same cardinality as N/2^2.
+
+Why should that be any different than N and N/10^places?
+
+What this paper really attempts to convey is what was stated earlier regarding the true nature of infinity: it isn't a value,
+and therefore cannot be used to determine the size of a set.
+
+8: Valued Sets
+
+We also aim to show that there exists a set we call "V", for the set of values, that can be expressed by taking any random
+string of digits (in this case, D, for decimal digits), that encompasses both the natural and real numbers sets, and has the
+same cardinality as N, aleph zero. By encompassing both N and R, having the same cardinality as N, R must also have the same
+cardinality, aleph zero.
+
+If we abstract the source of the digits, we can then apply this to binary digits (B: {0, 1}), which is what Cantor was using,
+and therefore, Cantor came to the incorrect conclusion.
