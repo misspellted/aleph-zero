@@ -1,0 +1,56 @@
+
+0: Abstract
+
+---
+
+In wathcing a few YouTube videos on the various perspectives on the idea of aleph, I've come to realize that most
+people are not willing to properly address the shortcomings of Cantor's Diagonalization Argument. Not that they
+incapable of sufficient inspection of the Argument; instead, they have demonstrated a mind capable of investigation
+in the related areas. Maybe they are focusing on a larger topic that borrows ideas from or relies on the Argument,
+maybe they assessed the Argument in a similar mindset and do not have the capacity to see the flaws in the
+assumptions of the Argument, or some other perspectives that merely references the Argument in passing. No matter
+the cause, the ideas expressed in this text and accompanying code serve to undermine the current comprehension and
+restore the true concept of infinity, ridding humanity of the laziness that comes with just accepting the Argument
+as the truth, and never truly questioning its assumptions.
+
+---
+
+1: The Argument
+
+---
+
+[Cantor used binary, but we'll reuse decimal, which is what is presented in most YouTube videos. We'll be able to show
+later that it won't matter what numerical base, or actually, any glyph-based system of notation, due to the properties
+uncovered and discussed.]
+
+---
+
+2: Reaching Infinity
+
+---
+
+---
+
+3: Generating Inferiority
+
+---
+
+---
+
+4: Unique Entropy
+
+---
+
+---
+
+5: Holey B.I.B.L.E
+
+---
+
+---
+
+6: Conclusion
+
+---
+
+---
