@@ -1,0 +1,267 @@
+session-notes-01.txt
+====================
+Date: 2026-04-08
+Context: Initial storyboarding session, conducted via Claude
+(claude.ai, Claude Sonnet 4.6)
+
+Note: This document captures key insights, argument refinements,
+and identified holes from the first major collaborative session
+on the aleph-zero project. It is intended to restore context
+in future sessions by referencing this file alongside paper.txt
+and storyboard.txt.
+
+For future sessions, suggested prompt:
+"Here is my repo: https://github.com/misspellted/aleph-zero
+Branch: make/storyboard-for-future-video
+Read paper.txt, storyboard.txt, and session-notes-01.txt
+and let's pick up where we left off."
+
+---
+
+1: Argument Refinements
+------------------------
+
+1.1 - The "1 as Completed Infinity" Argument
+The number 1, fully expressed, is:
+...000001.000000...
+Infinite leading zeros. Infinite trailing zeros. No beginning
+to the zeros before. No end to the zeros after. And yet we
+write it without hesitation, accepting the shorthand as complete.
+
+This directly undermines the objection that π cannot exist in
+the table because its decimal expansion never terminates.
+The same is true of 1. The difference is cosmetic, not
+structural. Both are infinite sequences with a decimal point
+placed at a particular position.
+
+Deployment: Scene 8 of storyboard. Also useful as a direct
+response to the "but what about irrationals" objection in
+Video 2.
+
+1.2 - Set V as the Master Construction
+Set V is the set of all possible glyph sequences, where:
+- The glyph set is whatever base is being used
+  (2 for binary, 10 for decimal, 16 for hex, etc.)
+- The decimal point is a positional marker within the sequence,
+  not a structural constraint
+- Any number — natural, integer, rational, irrational — is just
+  a particular sequence of glyphs from that finite set
+
+V encompasses N, Z (integers), R (reals), and irrationals.
+V has the same cardinality as N, therefore all subsets do too.
+This is the master claim of the paper, and should be stated
+explicitly and early in Video 1.
+
+1.3 - The Glyph System Generalization
+The Holey B.I.B.L.E. approach is not limited to decimal.
+It applies to any glyph-based notation system:
+- Binary (2 glyphs)
+- Octal (8 glyphs)
+- Hexadecimal (16 glyphs)
+- Alphanumeric (36 glyphs)
+- Any finite glyph set
+
+This means Cantor's original binary argument is equally
+undermined. The base doesn't matter. The structure does.
+
+1.4 - The Constraint Relaxation / V Set Extension
+The 0.0-to-1.0 constraint in Cantor's argument is arbitrary.
+Relaxing it to 0.0-to-10.0 simply requires one additional
+decimal place on the natural number side, which the Holey
+B.I.B.L.E. mechanism accommodates naturally.
+
+Extending this to infinity — allowing an infinite number of
+digits both before and after the decimal point — defines Set V
+fully. Pi exists in V because it is simply a sequence of
+digits from a finite glyph set (0-9), with the decimal point
+placed between the 3 and the 1415926...
+
+1.5 - The Function Foreshadowing (DO NOT CHANGE)
+Scene 4 of the storyboard contains the line:
+"If we can't trust the function, we can't trust the output."
+
+This line does triple duty:
+a) Immediate point: d-prime function is broken, output suspect
+b) Foreshadowing: plants "function" in audience's mind before
+   the conclusion "infinity isn't a value, it's a function"
+c) Epistemological: flawed tools produce flawed conclusions,
+   which is the entire thesis stated in plain English
+
+This line must not be changed. It is load-bearing narratively.
+
+---
+
+2: Holes Identified and Resolutions
+-------------------------------------
+
+2.1 - Hole: "Your table only covers finitely expressible reals"
+Objection: T[p] for any finite p only contains reals with
+finite decimal expansions. Irrationals like π, √2, and 1/3
+never appear in any finite T[p].
+
+Resolution: Two-part.
+Part A - The constraint relaxation (1.4 above) extends the
+table to cover all values in Set V, including irrationals,
+at T[∞].
+Part B - The "1 as completed infinity" argument (1.1 above)
+demonstrates that this objection applies equally to natural
+numbers. If π cannot be in the table because it requires
+infinite digits, then 1 cannot be in the table either.
+The objection proves too much, and therefore proves nothing.
+
+2.2 - Hole: "You haven't actually reached T[∞]"
+Objection: T[∞] is where all the interesting numbers live,
+but you can't actually construct it row by row.
+
+Resolution: Neither can Cantor. His proof assumes a completed
+infinite list of reals without constructing it. The Holey
+B.I.B.L.E. approach at least provides a systematic mechanism
+for approaching that limit, which random generation does not.
+The playing field is level. If Cantor's assumption is granted,
+the same assumption must be granted to T[∞].
+
+2.3 - Hole: "The diagonal symmetry argument proves too much"
+Reference: Paper section 2 - applying diagonalization to the
+natural numbers column to generate a new natural number not
+in the list.
+
+Status: Partially resolved. The argument successfully
+demonstrates that the "reaching infinity" assumption is equally
+problematic on both sides. However it does not by itself
+resolve the cardinality question — it restates the epilogue
+point that infinity isn't reachable as a value. This is
+intentional — it sets up the FLAG-1 payoff in Scene 9 of
+the storyboard.
+
+2.4 - Hole: "Cantor used binary, not decimal"
+Resolution: Addressed in paper and reinforced by the glyph
+system generalization (1.3 above). The base is irrelevant.
+The Holey B.I.B.L.E. mechanism applies to any finite glyph
+set, including binary. Cantor's original argument is equally
+undermined regardless of base.
+
+---
+
+3: Unresolved Holes / Open Questions
+--------------------------------------
+
+3.1 - The Formalist Response
+Mainstream mathematics grants Cantor's argument on the basis
+of completed infinite sets as a formal axiom (ZFC set theory).
+The counter to this is philosophical/foundational rather than
+constructive: if completed infinity is an axiom, it must be
+applied consistently to both sides of the argument.
+
+This is likely the strongest remaining objection and deserves
+its own dedicated treatment in Video 2.
+
+3.2 - The Constructivist / Finitist Position
+The argument as constructed aligns most naturally with
+mathematical finitism/constructivism (cf. Wittgenstein,
+Zeilberger). This is a respectable but minority position.
+Worth acknowledging explicitly in Video 2 to show the
+argument exists within a recognized mathematical tradition,
+rather than appearing to be a lone contrarian claim.
+
+3.3 - The Distinction Between Sequence and Limit
+Does the framework distinguish between π as a completed
+infinite sequence versus π as a limit approached but never
+finished? Current position: the distinction is meaningless,
+because 1 carries the same issue. But this needs to be
+stated explicitly in the paper and/or Video 1, not just
+implied.
+
+[BACKLOG: add explicit statement to paper.txt addressing
+the sequence vs limit distinction]
+
+3.4 - The N/2 Cardinality Epilogue (Paper Section 7)
+The paper's epilogue raises N vs N/2 cardinality as a
+supporting point but doesn't fully develop it. This could
+be expanded into a supporting argument for Video 1 or a
+standalone point in Video 2.
+
+---
+
+4: Video Series Seeds
+----------------------
+
+4.1 - Video 1: The Clean Argument (current storyboard)
+Target audience: curious non-mathematicians, science
+communicators, anyone who has watched Veritasium's videos
+and accepted the conclusion.
+Tone: investigative, generous, visual, accessible.
+Ends with: π in the table. Fade to black.
+
+4.2 - Video 2: Countering the Counters
+Address the strongest objections head-on:
+- ZFC set theory and completed infinity as axiom (3.1)
+- The constructivist tradition (3.2)
+- Sequence vs limit distinction (3.3)
+- Any objections generated by Video 1's comment section
+  [BACKLOG: leave this open until Video 1 exists]
+Tone: more technical, but still accessible.
+
+4.3 - Video 3+: TBD
+Follow the holes wherever they lead.
+This is the Holey B.I.B.L.E. applied to content. Each video
+fills the gaps left by the previous one. Expand as needed.
+
+---
+
+5: Miscellaneous Insights
+--------------------------
+
+5.1 - NDT Quote as Thesis Statement
+"The linear brain overrides even the stated facts."
+- Neil deGrasse Tyson, JRE #1904, ~2:26:00
+- From: "Starry Messenger: Cosmic Perspectives on Civilization"
+  Henry Holt & Company, September 2022
+
+This quote, delivered by one of the most recognizable science
+communicators alive, in the context of an exponential growth
+example that directly parallels the Holey B.I.B.L.E.
+mechanism, without NDT making the connection to Cantor,
+is the thesis of this entire project stated by an outside
+party without their knowledge.
+
+It is the closing line of Scene 9. It must land with full
+weight after the audience has already internalized the
+argument. Do not deploy it early.
+
+5.2 - "There's a Hole" Double Meaning
+The title of REF-2 ("There's a Hole at the Bottom of Math")
+is a direct reference that can be reclaimed:
+- Veritasium: the hole is a flaw (Gödel incompleteness)
+- This project: the hole is a slot to be filled (T[p] expansion)
+Suggested cold open callback: "There's a hole at the bottom
+of math. And I think I found it." (Scene 1, storyboard)
+
+5.3 - IP and Timestamp Trail
+All work is committed to:
+https://github.com/misspellted/aleph-zero
+Branch: make/storyboard-for-future-video
+Public repository with full commit history constitutes
+timestamped authorship record. No institutional or corporate
+IP claims apply. Work is independent.
+
+5.4 - Tooling Decision Deferred
+Animation framework decision (custom Pygame vs Manim vs hybrid)
+is deliberately deferred pending storyboard completion.
+The storyboard backlog will inform the tooling requirements
+naturally. Do not begin framework development until at least
+the first three scenes are storyboarded in detail.
+[BACKLOG: revisit tooling decision after Scene 3 is detailed]
+
+5.5 - The Carp Problem
+In JRE #1904, after NDT presents the algae/exponential growth
+example and the linear brain insight, Joe Rogan derails the
+discussion by introducing carp as a counter to algae growth.
+This is noted here as a cautionary example of how important
+discussions get sidelined by apparently relevant but ultimately
+derivative factors.
+The video exists to have the discussion that carp interrupted.
+
+---
+
+End of session-notes-01.txt
+============================
