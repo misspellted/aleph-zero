@@ -1,0 +1,355 @@
+storyboard.txt
+==============
+
+References
+----------
+[REF-1] Veritasium, "Math's Fundamental Flaw"
+        - Example table: 5:24
+        - d-prime function: 5:37-5:52
+        - Conclusion: 6:22-6:34
+        - URL: TBD [BACKLOG: locate URL]
+
+[REF-2] Veritasium, "There's a Hole at the Bottom of Math"
+        (renamed: "Math Has a Fatal Flaw")
+        - "unique" keyword: timestamp TBD
+        - URL: https://youtu.be/HeQX2HjkcNo
+        - [BACKLOG: re-watch, locate "unique" timestamp]
+
+[REF-3] Neil deGrasse Tyson, "The Linear Brain"
+        - Joe Rogan Experience #1904
+        - URL: https://www.youtube.com/watch?v=e8_vmWakyn4
+        - Timestamp: ~2:26:00
+        - Clip reference: https://www.youtube.com/watch?v=IDoIPcSoGI8
+        - Closing quote: "The linear brain overrides even the
+          stated facts."
+        - NDT book reference: TBD [BACKLOG: identify book title]
+
+[REF-4] TBD - confirm whether "unique" keyword source is [REF-2]
+        or a separate YouTuber/video
+        [BACKLOG: re-watch REF-2, confirm or identify separately]
+
+---
+
+Scene 1: The Hook
+-----------------
+Animation: Title card or cold open. Minimal.
+
+Narration:
+"There's a hole at the bottom of math.
+And I think I found it."
+
+Note: Deliberate callback to [REF-2] original title. Sets tone -
+not dismissive of Cantor, but investigative. We are not here to
+mock. We are here to look more carefully.
+
+---
+
+Scene 2: The Linear Brain
+--------------------------
+Animation: Simple lake visualization.
+- Lake shown half covered by algae.
+- Question posed on screen: "If algae covers half the lake today,
+  how many more days until the lake is fully covered?"
+- Pause. Let the audience think.
+- Answer revealed: One.
+
+Narration: Present the algae example. Let it land.
+Then pull the NDT quote directly [REF-3, ~2:26:00]:
+
+"The linear brain overrides even the stated facts."
+
+Narration:
+"This isn't a failure of intelligence. It's a failure of framing.
+And it's about to happen to all of us. Again."
+
+Note: This primes the audience for WHY Cantor's argument has gone
+unchallenged. Not because mathematicians are stupid - but because
+the linear construction of the argument defeats even correct
+intuition, in even the sharpest minds.
+
+[BACKLOG: confirm fair use/clip usage approach for REF-3 footage,
+or animate the algae example independently without original footage]
+
+---
+
+Scene 3: The Recapitulation
+----------------------------
+Animation: Clean two-column table. N left, R right.
+Populate faithfully per [REF-1] - N incrementing linearly, R random.
+
+Narration: Walk through Cantor's argument straight, the way most
+YouTubers present it. No editorializing. No interruption.
+Faithful and fair.
+
+Visual: As each "problem" is encountered, a RED FLAG appears
+quietly in a corner list. Don't interrupt the flow. The audience
+may not even notice them accumulating at first. That's intentional.
+
+FLAG-1 (red): "Have we truly reached infinity in N?"
+FLAG-2 (red): "The d-prime function's output space"
+FLAG-3 (red): "Uniqueness — have we got them all?"
+              [REF-2/REF-4 - timestamp TBD]
+
+Narration concludes the argument faithfully, as Cantor and
+Veritasium would. Let it land as if correct.
+
+Then: pause. Drift to the flag list.
+
+"...but let's look at these."
+
+Note: FLAG-1 is deliberately deferred to last. If addressed first,
+the argument collapses immediately and we never reach the more
+interesting and original contributions. The audience should hold
+the tension of that unresolved flag all the way through. It becomes
+a payoff, not a premature conclusion.
+
+---
+
+Scene 4: The Reckoning — FLAG-2 (d-prime)
+-------------------------------------------
+Animation: The broken d-prime table.
+Highlight the missing 0 in the output space in red.
+
+d | d'
+--+---
+0 | 1
+1 | 2
+2 | 3
+3 | 4
+4 | 5
+5 | 6
+6 | 7
+7 | 8
+8 | 9
+9 | 8  <- highlight in red: "where did 0 go?"
+
+Then: reveal the corrected (d+1) mod 10 version.
+
+d | d'
+--+---
+0 | 1
+1 | 2
+2 | 3
+3 | 4
+4 | 5
+5 | 6
+6 | 7
+7 | 8
+8 | 9
+9 | 0  <- corrected, highlight in green
+
+Narration:
+"A small fix. But it matters.
+If we can't trust the function, we can't trust the output."
+
+Note: "function" is deliberately planted here. The audience will
+not consciously register it. But when Scene 9 lands "infinity
+isn't a value, it's a function" - something clicks. That's
+intentional. Do not change this line.
+
+---
+
+Scene 5: The Reckoning — FLAG-3 (Uniqueness)
+----------------------------------------------
+Animation: Highlight the word "unique" in the argument as
+presented in Scene 3. Pull it forward visually.
+
+[BACKLOG: determine pokeball visual approach -
+  a) Contact The Pokemon Company for permission
+  b) Design original distinct visual evoking same concept
+  c) Verbal reference only, no visual asset used]
+
+Narration:
+"The key, we were told, was to get them all with no duplicates.
+Unique. No duplicates.
+But how do we KNOW we got them all?
+Random generation doesn't guarantee uniqueness.
+We need a mechanism. A test.
+What if instead of random... we were systematic?"
+
+Pivot to Scene 6.
+
+---
+
+Scene 6: The Reconstruction — Introducing T[p]
+------------------------------------------------
+Animation: T[1] appears. Small. Clean. 10 rows.
+
+Natural | Real
+--------+-----
+0       | 0.0
+1       | 0.1
+2       | 0.2
+3       | 0.3
+4       | 0.4
+5       | 0.5
+6       | 0.6
+7       | 0.7
+8       | 0.8
+9       | 0.9
+
+Narration:
+"What if there's a hole between 0.0 and 1.0?
+We know 0.5 exists. Let's fill it in."
+
+Animation: Table expands to T[2]. 100 rows.
+The growth is visible and slightly surprising.
+
+"And between those? More holes. Let's fill those too."
+
+T[3]: 1000 rows. Exponential acceleration now FELT by the audience.
+
+Narration:
+"The linear brain sees a table growing.
+But this isn't linear growth.
+Each new decimal place multiplies the rows by ten."
+
+Callback to Scene 2 algae example:
+"One more place. Ten times the coverage.
+Sound familiar?"
+
+Note: This is the "landslide" moment - the audience should feel
+the exponential growth before it is named. By the time Holey
+B.I.B.L.E. is introduced formally, they have already internalized
+what it means.
+
+---
+
+Scene 7: The Diagonal Applied
+-------------------------------
+Animation: Apply corrected d-prime diagonally to T[1].
+New number generated: 0.1
+Highlight 0.1 already in the table at index 1.
+
+Repeat for T[2]: generates 0.12. Already at index 12.
+Repeat for T[3]: generates 0.123. Already at index 123.
+
+Narration:
+"The new number isn't new.
+It's already there. It was always going to be there.
+Because we didn't generate this list randomly.
+We calculated it.
+Uniqueness isn't assumed. It's guaranteed by construction."
+
+---
+
+Scene 8: The Relaxing of Constraints
+--------------------------------------
+Animation: Table begins growing UPWARD as well as downward.
+Values above 1.0 appear. The 0-to-1 constraint dissolves visually.
+
+Narration:
+"But what about numbers outside 0 to 1?
+What about irrational numbers?
+What about pi?"
+
+Animation: Table continues growing in all directions.
+Pi located in the table. Infinite digits in both directions.
+Decimal point sitting quietly between 3 and 1415926...
+
+Narration:
+"Pi is just a sequence of digits.
+With a decimal point placed at one particular position.
+It's in the table. It was always in the table."
+
+Beat.
+
+"And while we're here - consider the number 1.
+Not just '1'. The full picture."
+
+Animation: 1 expands to reveal ...000001.000000...
+Infinite leading zeros. Infinite trailing zeros.
+
+Narration:
+"There is no beginning to the zeros before.
+No end to the zeros after.
+And yet we find ourselves able to write it.
+We always could.
+We just didn't notice the infinity we were carrying."
+
+---
+
+Scene 9: The FLAG-1 Payoff
+----------------------------
+Animation: Return to the flag list from Scene 3.
+One flag remains. FLAG-1 pulses gently.
+"Have we truly reached infinity in N?"
+
+Narration:
+"Now. That first flag.
+The one we set aside.
+Have we truly reached infinity in the natural numbers?
+
+No. We haven't.
+We never can. Neither can Cantor.
+
+But here's the thing -
+neither side needs to.
+The table doesn't need to be complete to be correct.
+It needs to be systematic.
+It needs to grow the same way on both sides.
+And it does."
+
+Callback: "The linear brain overrides even the stated facts."
+[REF-3]
+
+Narration:
+"The linear construction of the original argument
+made the natural numbers look like they were keeping up.
+Row by row. One at a time.
+They weren't. But neither were the reals.
+Both sides are infinite. Both sides grow forever.
+And when you build the table correctly -
+they grow together."
+
+---
+
+Scene 10: The Conclusion — Fade to Black
+-----------------------------------------
+Animation: The full table, growing in all directions simultaneously.
+- Downward: exponentially, rows multiplying with each new place
+- Outward left: natural numbers extending, digits accumulating
+- Outward right: real numbers extending, digits accumulating
+- Upward: constraints dissolving, full value space visible
+- Pi visible. Infinite in both directions. At home in the table.
+
+Narration:
+"Infinity isn't a value.
+It's a function.
+For any input i, return i + 1.
+
+And when you apply it carefully -
+systematically, not randomly -
+you find that the natural numbers and the real numbers
+grow together.
+Always have.
+Same size. Same cardinality.
+Aleph zero."
+
+Animation: Table fills the screen. Every direction. Unstoppable.
+Pi, infinite in both directions, holds in frame.
+
+Fade to black.
+
+---
+
+BACKLOG
+-------
+[ ] Locate Veritasium "Math's Fundamental Flaw" URL [REF-1]
+[ ] Re-watch REF-2, locate "unique" timestamp, confirm
+    REF-2 = REF-4 or identify separate source [REF-4]
+[ ] Re-watch REF-3 clip, confirm ~2:26:00 timestamp accuracy
+[ ] Identify NDT book title referenced in JRE #1904 [REF-3]
+[ ] Determine pokeball visual approach (Scene 5):
+    a) Contact The Pokemon Company for permission
+    b) Design original distinct visual
+    c) Verbal reference only, no visual
+[ ] Confirm fair use approach for NDT clip [REF-3] and
+    Veritasium footage [REF-1, REF-2], or animate independently
+[ ] Fix paper.txt video title reference if needed after
+    confirming REF-1 vs REF-2 distinction
+[ ] Identify animation tooling per scene requirements:
+    evaluate Manim vs custom Pygame framework vs hybrid approach
+[ ] Generate three.txt via table.py, commit to repository
+[ ] Add storyboard.txt to repository on
+    make/storyboard-for-future-video branch
