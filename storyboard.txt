@@ -22,7 +22,9 @@ References
         - Clip reference: https://www.youtube.com/watch?v=IDoIPcSoGI8
         - Closing quote: "The linear brain overrides even the
           stated facts."
-        - NDT book reference: TBD [BACKLOG: identify book title]
+        - NDT book: "Starry Messenger: Cosmic Perspectives
+          on Civilization", Henry Holt & Company, September 2022
+          https://neildegrassetyson.com/books/2022-09-starry-messenger/
 
 [REF-4] TBD - confirm whether "unique" keyword source is [REF-2]
         or a separate YouTuber/video
@@ -339,7 +341,7 @@ BACKLOG
 [ ] Re-watch REF-2, locate "unique" timestamp, confirm
     REF-2 = REF-4 or identify separate source [REF-4]
 [ ] Re-watch REF-3 clip, confirm ~2:26:00 timestamp accuracy
-[ ] Identify NDT book title referenced in JRE #1904 [REF-3]
+[x] Identify NDT book title referenced in JRE #1904 [REF-3]
 [ ] Determine pokeball visual approach (Scene 5):
     a) Contact The Pokemon Company for permission
     b) Design original distinct visual
@@ -351,5 +353,5 @@ BACKLOG
 [ ] Identify animation tooling per scene requirements:
     evaluate Manim vs custom Pygame framework vs hybrid approach
 [ ] Generate three.txt via table.py, commit to repository
-[ ] Add storyboard.txt to repository on
+[X] Add storyboard.txt to repository on
     make/storyboard-for-future-video branch
