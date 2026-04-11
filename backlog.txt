@@ -1,0 +1,103 @@
+backlog.txt
+===========
+
+Extracted from storyboard.txt during session 02.
+Items marked [x] are complete. Items marked [ ] are open.
+
+---
+
+References
+----------
+
+[x] Confirm REF-1 ("Math's Fundamental Flaw") and REF-2
+    ("There's a Hole at the Bottom of Math") are the same video
+    -> Confirmed same video: https://www.youtube.com/watch?v=HeQX2HjkcNo
+    -> References collapsed into single [REF-1] entry in storyboard
+
+[x] Locate uniqueness-related timestamps in REF-1
+    -> 5:02-5:05: "no duplicates" applied to R column
+       "The key is to make sure we get them all [the real numbers]
+       with no duplicates..."
+    -> 5:26: "unique" applied to N column as index
+       "...each integer acting like an index number, a unique
+       identifier for each real number on the list"
+    -> Note: both faces of the same requirement; both now
+       documented in storyboard REF-1 entry and Scene 5 note
+
+[ ] Re-watch REF-2 (NDT/JRE), confirm ~2:26:00 timestamp accuracy
+
+[x] Identify NDT book title referenced in JRE #1904 [REF-2]
+    -> "Starry Messenger: Cosmic Perspectives on Civilization"
+       Henry Holt & Company, September 2022
+
+---
+
+Scene 2
+-------
+
+[ ] Confirm fair use/clip usage approach for REF-2 footage
+    (NDT/JRE), or animate the algae example independently
+    without original footage
+
+---
+
+Scene 5
+-------
+
+[ ] Determine pokeball visual approach:
+    a) Contact The Pokemon Company for permission
+    b) Design original distinct visual evoking same concept
+    c) Verbal reference only, no visual asset used
+
+---
+
+Scenes 1, 2, 3
+---------------
+
+[ ] Confirm fair use approach for Veritasium footage [REF-1],
+    or animate independently
+
+---
+
+Paper
+-----
+
+[ ] Fix paper.txt video title reference if needed now that
+    REF-1 title is confirmed as "There's a Hole at the Bottom
+    of Math" (also known as "Math's Fundamental Flaw")
+
+[ ] Add explicit statement to paper.txt addressing the
+    sequence vs limit distinction
+    (ref: session-notes-01.txt, section 3.3)
+
+---
+
+Tooling
+-------
+
+[ ] Identify animation tooling per scene requirements:
+    evaluate Manim vs custom Pygame framework vs hybrid approach
+    Note: defer until storyboard Scenes 1-3 are detailed
+    (ref: session-notes-01.txt, section 5.4)
+
+---
+
+Code / Repository
+-----------------
+
+[ ] Generate three.txt via table.py, commit to repository
+
+[x] Add storyboard.txt to repository on
+    make/storyboard-for-future-video branch
+
+---
+
+Video 2 (Future)
+----------------
+
+[ ] Leave Video 2 backlog open until Video 1 exists.
+    Seed topics from session-notes-01.txt, section 4.2:
+    - ZFC set theory / completed infinity as axiom (3.1)
+    - The constructivist tradition (3.2)
+    - Sequence vs limit distinction (3.3)
+    - Objections from Video 1 comment section
