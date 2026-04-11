@@ -9,14 +9,24 @@ Items marked [x] are complete. Items marked [ ] are open.
 References
 ----------
 
-[ ] Locate Veritasium "Math's Fundamental Flaw" URL [REF-1]
+[x] Confirm REF-1 ("Math's Fundamental Flaw") and REF-2
+    ("There's a Hole at the Bottom of Math") are the same video
+    -> Confirmed same video: https://www.youtube.com/watch?v=HeQX2HjkcNo
+    -> References collapsed into single [REF-1] entry in storyboard
 
-[ ] Re-watch REF-2, locate "unique" timestamp, confirm
-    REF-2 = REF-4 or identify separate source [REF-4]
+[x] Locate uniqueness-related timestamps in REF-1
+    -> 5:02-5:05: "no duplicates" applied to R column
+       "The key is to make sure we get them all [the real numbers]
+       with no duplicates..."
+    -> 5:26: "unique" applied to N column as index
+       "...each integer acting like an index number, a unique
+       identifier for each real number on the list"
+    -> Note: both faces of the same requirement; both now
+       documented in storyboard REF-1 entry and Scene 5 note
 
-[ ] Re-watch REF-3 clip, confirm ~2:26:00 timestamp accuracy
+[ ] Re-watch REF-2 (NDT/JRE), confirm ~2:26:00 timestamp accuracy
 
-[x] Identify NDT book title referenced in JRE #1904 [REF-3]
+[x] Identify NDT book title referenced in JRE #1904 [REF-2]
     -> "Starry Messenger: Cosmic Perspectives on Civilization"
        Henry Holt & Company, September 2022
 
@@ -25,7 +35,7 @@ References
 Scene 2
 -------
 
-[ ] Confirm fair use/clip usage approach for REF-3 footage
+[ ] Confirm fair use/clip usage approach for REF-2 footage
     (NDT/JRE), or animate the algae example independently
     without original footage
 
@@ -44,16 +54,17 @@ Scene 5
 Scenes 1, 2, 3
 ---------------
 
-[ ] Confirm fair use approach for Veritasium footage
-    [REF-1, REF-2], or animate independently
+[ ] Confirm fair use approach for Veritasium footage [REF-1],
+    or animate independently
 
 ---
 
 Paper
 -----
 
-[ ] Fix paper.txt video title reference if needed after
-    confirming REF-1 vs REF-2 distinction
+[ ] Fix paper.txt video title reference if needed now that
+    REF-1 title is confirmed as "There's a Hole at the Bottom
+    of Math" (also known as "Math's Fundamental Flaw")
 
 [ ] Add explicit statement to paper.txt addressing the
     sequence vs limit distinction
