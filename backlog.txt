@@ -1,0 +1,92 @@
+backlog.txt
+===========
+
+Extracted from storyboard.txt during session 02.
+Items marked [x] are complete. Items marked [ ] are open.
+
+---
+
+References
+----------
+
+[ ] Locate Veritasium "Math's Fundamental Flaw" URL [REF-1]
+
+[ ] Re-watch REF-2, locate "unique" timestamp, confirm
+    REF-2 = REF-4 or identify separate source [REF-4]
+
+[ ] Re-watch REF-3 clip, confirm ~2:26:00 timestamp accuracy
+
+[x] Identify NDT book title referenced in JRE #1904 [REF-3]
+    -> "Starry Messenger: Cosmic Perspectives on Civilization"
+       Henry Holt & Company, September 2022
+
+---
+
+Scene 2
+-------
+
+[ ] Confirm fair use/clip usage approach for REF-3 footage
+    (NDT/JRE), or animate the algae example independently
+    without original footage
+
+---
+
+Scene 5
+-------
+
+[ ] Determine pokeball visual approach:
+    a) Contact The Pokemon Company for permission
+    b) Design original distinct visual evoking same concept
+    c) Verbal reference only, no visual asset used
+
+---
+
+Scenes 1, 2, 3
+---------------
+
+[ ] Confirm fair use approach for Veritasium footage
+    [REF-1, REF-2], or animate independently
+
+---
+
+Paper
+-----
+
+[ ] Fix paper.txt video title reference if needed after
+    confirming REF-1 vs REF-2 distinction
+
+[ ] Add explicit statement to paper.txt addressing the
+    sequence vs limit distinction
+    (ref: session-notes-01.txt, section 3.3)
+
+---
+
+Tooling
+-------
+
+[ ] Identify animation tooling per scene requirements:
+    evaluate Manim vs custom Pygame framework vs hybrid approach
+    Note: defer until storyboard Scenes 1-3 are detailed
+    (ref: session-notes-01.txt, section 5.4)
+
+---
+
+Code / Repository
+-----------------
+
+[ ] Generate three.txt via table.py, commit to repository
+
+[x] Add storyboard.txt to repository on
+    make/storyboard-for-future-video branch
+
+---
+
+Video 2 (Future)
+----------------
+
+[ ] Leave Video 2 backlog open until Video 1 exists.
+    Seed topics from session-notes-01.txt, section 4.2:
+    - ZFC set theory / completed infinity as axiom (3.1)
+    - The constructivist tradition (3.2)
+    - Sequence vs limit distinction (3.3)
+    - Objections from Video 1 comment section
