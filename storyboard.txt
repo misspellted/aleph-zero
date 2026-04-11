@@ -5,10 +5,9 @@ References
 ----------
 
 [REF-1] Veritasium, "There's a Hole at the Bottom of Math"
-  (also known as: "Math's Fundamental Flaw")
+  (now "Math's Fundamental Flaw")
   - URL: https://www.youtube.com/watch?v=HeQX2HjkcNo
   - Treatment begins: 3:45
-  - Example table: 5:24
   - "no duplicates" (R column): 5:02-5:05
     "The key is to make sure we get them all [the real numbers]
     with no duplicates..."
@@ -17,7 +16,6 @@ References
     identifier for each real number on the list"
   - d-prime function flaw (9 -> 8, orphaning 0): 5:50-5:52
     "...if the digit is a nine, just roll it back to an eight..."
-  - Conclusion: 6:22-6:34
 
 [REF-2] Neil deGrasse Tyson, "The Linear Brain"
   - Joe Rogan Experience #1904
@@ -47,37 +45,7 @@ mock. We are here to look more carefully.
 
 ---
 
-Scene 2: The Linear Brain
---------------------------
-
-Animation: Simple lake visualization.
-  - Lake shown half covered by algae.
-  - Question posed on screen: "If algae covers half the lake today,
-    how many more days until the lake is fully covered?"
-  - Pause. Let the audience think.
-  - Answer revealed: One.
-
-Narration: Present the algae example. Let it land.
-
-Then pull the NDT quote directly [REF-2, ~2:26:00]:
-  "The linear brain overrides even the stated facts."
-
-Narration:
-  "This isn't a failure of intelligence. It's a failure of framing.
-  And it's about to happen to all of us. Again."
-
-Note: This primes the audience for WHY Cantor's argument has gone
-unchallenged. Not because mathematicians are stupid - but because
-the linear construction of the argument defeats even correct
-intuition, in even the sharpest minds.
-
-[see backlog.txt: confirm fair use/clip usage approach for REF-2
-footage, or animate the algae example independently without
-original footage]
-
----
-
-Scene 3: The Recapitulation
+Scene 2: The Recapitulation
 ----------------------------
 
 Animation: Clean two-column table. N left, R right.
@@ -109,6 +77,39 @@ the argument collapses immediately and we never reach the more
 interesting and original contributions. The audience should hold
 the tension of that unresolved flag all the way through. It becomes
 a payoff, not a premature conclusion.
+
+---
+
+Scene 3: The Linear Brain
+--------------------------
+
+Animation: Simple lake visualization.
+  - Lake shown half covered by algae.
+  - Question posed on screen: "If algae covers half the lake today,
+    how many more days until the lake is fully covered?"
+  - Pause. Let the audience think.
+  - Answer revealed: One.
+
+Narration: Present the algae example. Let it land.
+
+Then pull the NDT quote directly [REF-2, ~2:26:00]:
+  "The linear brain overrides even the stated facts."
+
+Narration:
+  "This isn't a failure of intelligence. It's a failure of framing.
+  And you just watched it happen.
+  Let's go back and look more carefully."
+
+Note: With the swap, the NDT quote now lands as a mirror — the
+audience has just nodded along to Cantor's argument, and the quote
+reflects that experience back at them. "You just watched it happen"
+replaces the earlier forward-looking framing ("it's about to happen
+to all of us") and is stronger for it. The pivot back to the flags
+then feels earned rather than warned-about.
+
+[see backlog.txt: confirm fair use/clip usage approach for REF-2
+footage, or animate the algae example independently without
+original footage]
 
 ---
 
@@ -165,7 +166,7 @@ intentional. Do not change this line.
 Scene 5: The Reckoning — FLAG-3 (Uniqueness)
 ----------------------------------------------
 
-Animation: Highlight the "no duplicates" constraint from Scene 3.
+Animation: Highlight the "no duplicates" constraint from Scene 2.
 Pull it forward visually.
 
 Note: The uniqueness concept operates on both columns of the table,
@@ -227,7 +228,7 @@ Narration:
   But this isn't linear growth.
   Each new decimal place multiplies the rows by ten."
 
-Callback to Scene 2 algae example:
+Callback to Scene 3 algae example:
   "One more place. Ten times the coverage.
   Sound familiar?"
 
@@ -299,7 +300,7 @@ Narration:
 Scene 9: The FLAG-1 Payoff
 ----------------------------
 
-Animation: Return to the flag list from Scene 3.
+Animation: Return to the flag list from Scene 2.
 One flag remains. FLAG-1 pulses gently.
   "Have we truly reached infinity in N?"
 
