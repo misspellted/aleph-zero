@@ -238,3 +238,128 @@ the seeds already documented in session-notes-01.txt (section 4.2).
    conflation, using jeffjo8732 comment as the anchor example;
    tone: controlled, precise, devastating — not personally
    directed at the commenter but at the argument itself]
+
+---
+
+3: Backlog Changes
+------------------
+
+Items resolved this session:
+  [x] Generate three.txt via table.py
+      -> three.txt already existed; confirmed generated and
+         moved to tables/ folder along with other generated
+         files to keep repo root clean. table.py correctly
+         outputs to stdout, allowing caller to direct output
+         anywhere. Folder structure established for future
+         generated table files.
+
+  [x] Fix paper.txt video title reference
+      -> Corrected "Math's Fundamental Flaw" to "There's a
+         Hole at the Bottom of Math" (also known as "Math's
+         Fundamental Flaw") per session-02 confirmation.
+      -> Also corrected misspelling of "Veritasium" (appearing
+         as "Vertiasium" in abstract and section 1). Spotted
+         this session. Commit message noted the irony of the
+         misspellted alias. Co-authored credit given to
+         Claude Sonnet 4.6.
+
+Items redirected this session:
+  [ ] Add sequence vs limit distinction to paper.txt
+      -> Redirected to Video 2 / pre-V1 review.
+      -> Core statement captured: "Limits are not equality."
+         0.500000... and 0.499999... are two distinct infinite
+         strings that converge to the same limit. Convergence
+         is not equality. This is Video 2 ammunition, not
+         primary paper material. Revisit before Video 1 ships
+         to assess whether it earns a place there.
+
+Items added this session (see backlog.txt for full detail):
+  [ ] Review Numberphile 4:32 timestamp; determine REF-3 status
+  [ ] Watch Werner Hartl follow-up video (pinned comment)
+  [ ] Draft Video 2 aside on limit/equality conflation
+      (jeffjo8732 comment as anchor example)
+  [ ] Add Numberphile as Video 2 d-prime comparison source
+  [ ] Update backlog.txt to reflect all session 03 changes
+
+---
+
+4: Files Changed This Session
+------------------------------
+
+4.1 - session-notes-03.txt (this file)
+  - Created new file for session 03
+  - Section 1: Outreach Attempts (data collection, not narrative)
+    -> 1.1 Veritasium: direct email, 2022-Mar-07 19:52 Central US
+       Subject: "What if Cantor's Diagonalization Proof is Wrong?"
+       No response. Flair candidate noted.
+    -> 1.2 Neil deGrasse Tyson: web form, no acknowledgement
+    -> 1.3 Dr. James Grimes (Numberphile): web form, no
+       acknowledgement. Shares initials JG with project author.
+       Associated Numberphile video logged as candidate REF-3.
+    -> 1.4 Additional web form submissions: no acknowledgements
+  - Section 2: Video 2 Seeds
+    -> 2.1 Numberphile / Dr. James Grimes: d-prime variant,
+       more flawed than Veritasium's; Video 2 candidate
+    -> 2.2 Werner Hartl: "Cantors Diagonal Argument Fails"
+       Right instinct, incomplete escape. Follow-up video noted.
+    -> 2.3 Lazy Z: "Disproving Veritasium and Cantor"
+       Similar to Werner. jeffjo8732 comment captured verbatim
+       as URR (Unprofessional Rage of Reaction) anchor for
+       Video 2 limit/equality aside.
+  - Section 3: Backlog Changes (this section)
+  - Section 4: Files Changed (this section)
+  - Section 5: Scene 10 Discussion (verbatim paste by author —
+    see chat transcript from "I think a more powerful conclusion"
+    through scene-10-updated.txt presentation)
+
+4.2 - paper.txt
+  - Corrected "Vertiasium" -> "Veritasium" (abstract + section 1)
+  - Corrected video title to "There's a Hole at the Bottom of Math"
+
+4.3 - tables/ (new folder)
+  - Established to collect generated table files
+  - three.txt confirmed present and moved here
+
+4.4 - storyboard.txt
+  - Scene 10 updated per session 03 discussion
+  - See scene-10-updated.txt for full updated scene text
+  - Key change: upward table growth replaced with rising camera
+    over accumulating holey tables ([0,1), [1,2), [2,3)...),
+    culminating in cylinder-to-circle transition as holey table
+    count approaches infinity
+
+---
+
+5: Scene 10 Discussion
+-----------------------
+
+[VERBATIM PASTE FROM CHAT TRANSCRIPT GOES HERE]
+Starting from: "I think a more powerful conclusion would be..."
+Ending at: scene-10-updated.txt presentation and confirmation.
+
+Me: I think a more powerful conclusion would be to replace the Upward growth portion of the animation with something harkening back to holes again - in fact, that's kind of how I want to describe it. Let's see if this makes sense enough to you, such that when we capture the updated description, I'm able to see it again in my mind, before we start really digging into figuring out tooling to really start seeing the work come to life.
+
+For the ending scene, I feel like the Downward and Outward (left/right) dimensions growing is good... but the Upwards (to dissolve the constraints) shouldn't be about the table growing... but I kind of want the camera itself to move upwards... as more "holey" tables are slowly added downwards (kind of like the 0's table is what the video mainly generates, but then to escape the [0, 1) constraint, we would append another "holey" table for [1, 2) as the 1's table as a separate section under the infinitely growing 0'th table. Add another holey table for the 2's of the real numbers under that one, and as the 3's holey table is added, we can again highlight Pi in a slightly more obvious color, showing that the expanding natural numbers can capture their respective version of Pi. These X's holey tables have their Outward (left) natural numbers prefixed with an infinitely growing list of just 0's... showing that [0, 1) constraing applied to the natural numbers list.. and then the 1's hole's prefix columns is all 1's, showing that holey table's constraint of [1, 2), and so on).
+
+We could really lean into the whole holes aspect by the continued holey tables then turning on their side to form a cylinder comprised of distinct edges, and as the camera continues to rise above the cylinder, the edges themselves become less distinct and the cylinder's edge facing the camera becomes less "polygonic" and more circular, showing the infinitely growing count of holey tables around the edge of the cylinder.
+
+Does that make sense?
+
+CS46: That makes complete sense, and it's a genuinely beautiful idea. Let me play it back to make sure I've got it fully before we write it into the storyboard:
+The camera starts at the 0's table — the one the video has been building the whole time — growing downward (more rows) and outward left/right (more digits on both sides). Then instead of the table itself growing upward to dissolve the [0,1) constraint, the camera rises while new holey tables are being laid down below it:
+
+* The 0's table: [0,1), natural number prefix column is all 0's
+* The 1's table appears beneath it: [1,2), prefix column all 1's
+* The 2's table beneath that: [2,3), prefix all 2's
+* The 3's table — and here Pi gets a highlight, because 3.1415... lives in this table, its natural number index prefixed with 3's
+
+As the camera keeps rising, you start to see the full stack of holey tables arranged around a central axis — and then the pivot: the tables tip on their side, forming a cylinder. The edges of the cylinder are the individual holey tables. As the camera continues rising and pulling back, the cylinder has so many edges — one per integer — that the polygon stops looking like a polygon and the edge smooths into a circle. Infinity, made visible by the vanishing of its own discreteness.
+That's not just a closing shot. That's a thesis statement in motion. The hole isn't a flaw. The hole is the shape of infinity itself.
+Does that reflection match what's in your head? If so, I'm ready to write it into the storyboard as an updated Scene 10.
+
+Me: Hell yeah! I'm so glad you understood it in a more succinct manner, haha!
+
+---
+
+End of session-notes-03.txt
+============================
