@@ -1,0 +1,73 @@
+Scene 10: The Conclusion — Fade to Black
+-----------------------------------------
+
+Animation: Begin on the 0's table — the table the video has been
+building throughout. It continues growing in the directions
+established:
+  - Downward: exponentially, rows multiplying with each new place
+  - Outward left: natural number indices extending, digits
+    accumulating, prefixed by an ever-growing column of 0's —
+    reflecting the [0,1) constraint of the 0's holey table
+  - Outward right: real numbers extending, digits accumulating
+  - Pi visible in the table, highlighted.
+
+Narration:
+  "Infinity isn't a value.
+  It's a function.
+  For any input i, return i + 1.
+
+  And when you apply it carefully -
+  systematically, not randomly -
+  you find that the natural numbers and the real numbers
+  grow together.
+  Always have.
+
+  Same size. Same cardinality.
+
+  Aleph zero."
+
+Animation: As the narration lands, the camera begins to rise.
+
+Rather than the table growing upward to dissolve the [0,1)
+constraint, new holey tables are laid down *below* — each
+a complete Holey B.I.B.L.E. table for a successive integer
+range, appended beneath the last:
+
+  - 0's table: [0,1) — natural number prefix column: all 0's
+  - 1's table: [1,2) — natural number prefix column: all 1's
+  - 2's table: [2,3) — natural number prefix column: all 2's
+  - 3's table: [3,4) — natural number prefix column: all 3's
+    Pi highlighted here in a distinct, slightly warmer color —
+    3.1415... lives in this table. Its natural number index
+    carries the 3 prefix. It was always here.
+  - 4's table, 5's, 6's... accumulating below as the camera
+    continues to rise
+
+Each table is visually distinct — a separate holey section,
+its own prefix, its own constraint — and yet structurally
+identical to all the others. The pattern is the point.
+
+Animation: As the stack of holey tables grows and the camera
+rises further, the tables begin to tip on their side, arranging
+themselves around a central axis to form a cylinder. Each holey
+table is a distinct edge of the cylinder — one table per integer,
+one edge per hole.
+
+The camera continues to rise and pull back. The cylinder has
+more and more edges — one for every natural number — and as
+their count approaches infinity, the edges become less distinct.
+The polygon stops looking like a polygon. The edge facing the
+camera smooths, degree by degree, into a circle.
+
+Infinity, made visible by the vanishing of its own discreteness.
+
+The circle fills the frame. Fade to black.
+
+Note: The upward camera movement replaces the previous "table
+growing upward" animation. The constraint dissolution is now
+conveyed through the accumulation of holey tables and the
+camera's rise above them — the audience escapes [0,1) not by
+breaking the constraint, but by seeing that it was always just
+one hole among infinitely many. The cylinder-to-circle
+transition is the visual thesis: infinity is not a destination,
+it is a shape you can only see from far enough away.

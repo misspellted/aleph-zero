@@ -4,7 +4,7 @@
 ---
 
 In wathcing a few YouTube videos on the various perspectives on the idea of aleph, I've come to realize that most
-people are not willing to properly address the shortcomings of Cantor's Diagonalization Argument. Not that they
+people are not willing to properly address the shortcomings of Cantor's Diagonalization Argument. Not that they are
 incapable of sufficient inspection of the Argument; instead, they have demonstrated a mind capable of investigation
 in the related areas. Maybe they are focusing on a larger topic that borrows ideas from or relies on the Argument,
 maybe they assessed the Argument in a similar mindset and do not have the capacity to see the flaws in the
@@ -35,7 +35,7 @@ In various videos on YouTube thus watched on or tangential to the subject, the A
 7) Demonstrate that this new value cannot exist as other entries in the table, since each digit per row is different.
 8) Conclude that since the right column has one more value than the left column, R has a different cardinality than N.
 
-Using the explanation expressed in Vertiasium's "Math's Fundamental Flaw" video on YouTube, we pull out the starting
+Using the explanation expressed in Veritasium's 'There's a Hole at the Bottom of Math' video on YouTube, we pull out the starting
 example table (11 entries, at 5 minutes, 24 seconds into the video):
 
 Natural|Real
@@ -53,7 +53,7 @@ Natural|Real
      11|0.0623600003454741064201627409602224361151
        +------------------------------------------
 
-Vertiasium states that "Now, since each real number is an infinite decimal, there is no first one, so we can write them
+Veritasium states that "Now, since each real number is an infinite decimal, there is no first one, so we can write them
 down in any random order. The key is to make sure we get them all with no duplicates, and line them up one to one with
 an integer." (4:54 to 5:08).
 
@@ -69,7 +69,7 @@ This new real number is then compared against all values in the right column, de
 it has at least one different digit in the particular place for each row, and as such, it is not in the table with a one-
 to-one integer.
 
-Vertiasium concludes "It shows there must be more real numbers between zero and one than there are natural numbers extending
+Veritasium concludes "It shows there must be more real numbers between zero and one than there are natural numbers extending
 out to infinity. So not all infinities are the same size." (6:22 to 6:34)
 
 And, if one were to follow the logic, the conclusion appears to be undeniable and pretty solid. However, there are a few
@@ -90,7 +90,7 @@ the diagonalization to the natural number column, starting from the right-most d
 We would find a new natural number that does not exist in the natural numbers column, disproving the assumption that we have
 reached infinity.
 
-Borrowing the table from Vertiasium's video again, but filling in the missing zeros in the natural number column, and using
+Borrowing the table from Veritasium's video again, but filling in the missing zeros in the natural number column, and using
 the same derived digit function:
 
 Natural|Real
@@ -123,7 +123,7 @@ is another of assumption we need to address first.
 
 ---
 
-In the Vertiasium video, a derived digit function is presented, and we expand the definition to a more formal function:
+In the Veritasium video, a derived digit function is presented, and we expand the definition to a more formal function:
 
 d|d' (d-prime)
 -+-
@@ -142,7 +142,7 @@ This d-prime function, as we shall call it hereafter, has a "Fundamental Flaw": 
 of decimal digits (0-9), but the output space only covers 90% (1-9). The "roll it back to eight" instruction is the fly
 in the ointment, as the new real number cannot have any zeros in the value, excepting that of the "0." prefix.
 
-The correct d-prime function (in Vertiasium's example) should be to "roll nine to zero", or, to put it in a more
+The correct d-prime function (in Veritasium's example) should be to "roll nine to zero", or, to put it in a more
 mathematical form: (d + 1) mod 10, in which the corrected output space properly affords reaching the 0 digit again:
 
 d|d' (d-prime)
@@ -166,7 +166,7 @@ There is one more assumption we must address, however, before we can really unde
 
 ---
 
-Vertiasium states that "Now, since each real number is an infinite decimal, there is no first one, so we can write them
+Veritasium states that "Now, since each real number is an infinite decimal, there is no first one, so we can write them
 down in any random order. The key is to make sure we get them all with no duplicates, and line them up one to one with
 an integer." (4:54 to 5:08).
 
